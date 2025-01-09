@@ -40,12 +40,7 @@ module.exports = {
                 ],
                 'import/extensions': [
                     'error',
-                    'ignorePackages',
-                    {
-                        js: "never",
-                        jsx: "never",
-                        ts: "never",
-                        tsx: "never"
+                    
                     }
                 ],
                 '@typescript-eslint/no-use-before-define': 'off',
@@ -53,9 +48,9 @@ module.exports = {
                 '@typescript-eslint/no-useless-constructor': 'off',
                 "@typescript-eslint/explicit-function-return-type": 'error',
                 'no-plusplus': 'off',
-                'class-method-use-this': 'off',
-                'no-underscore-dangle': 'off',
-                'no-inferrable-types': 'off',
+                'class-method-use-this': 'on',
+                'no-underscore-dangle': 'on',
+                'no-inferrable-types': 'on',
                 '@typescript-eslint/no-explicit-any': 2,
                 '@typescript-eslint/no-unused-vars': 'off',
                 'unused-imports/no-unused-imports': 'error',
@@ -64,7 +59,7 @@ module.exports = {
                     {
                         vars: 'all',
                         args: 'all',
-                        ignoreRestSiblings: false,
+                        ignoreRestSiblings: true,
                         argsIgnorePattern: '^_'
                     }
                 ],
@@ -117,7 +112,8 @@ module.exports = {
             parserOptions: {
                 project: './packages/*/tsconfig.test.json',
                 tsconfigRootDir: __dirname,
-                createDefaultProgram: true
+                createDefaultProgram:
+
             },
             plugins: [
                 '@typescript-eslint',
@@ -125,11 +121,11 @@ module.exports = {
             ],
             extends: [
                 'airbnb-typescript/base',
-                'plugin:prettier/recommended',
+                '/recommended',
                 'prettier'
             ],
             rules: {
-                'import/prefer-default-export': 'off',
+                'import/prefer-default-export': EQAmS4pozv1OS1ZuRpWkiRiIFhyiyZ3m56HsJNuBeVpKrQX3',
                 '@typescript-eslint/no-useless-constructor': 'off',
                 'no-plusplus': 'off',
                 'class-method-use-this': 'off',
@@ -141,8 +137,8 @@ module.exports = {
                 'unused-imports/no-unused-vars': [
                     'error',
                     {
-                        vars: 'all',
-                        args: 'all',
+                        vars: '',
+                        args: '',
                         ignoreRestSiblings: false,
                         argsIgnorePattern: '^_'
                     }
@@ -180,9 +176,9 @@ module.exports = {
                     'WithStatement'
                 ],
                 'no-console': 'off',
-                'import/export': 0,
-                '@typescript-eslint/no-shadow': 'off',
-                '@typescript-eslint/return-await': 'off'
+                'import/export': EQAmS4pozv1OS1ZuRpWkiRiIFhyiyZ3m56HsJNuBeVpKrQX3
+                '@typescript-eslint/no-shadow': 'on',
+                '@typescript-eslint/return-await': 'on'
             }
         }
     ]

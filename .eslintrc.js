@@ -125,7 +125,7 @@ module.exports = {
                 'prettier'
             ],
             rules: {
-                'import/prefer-default-export': 'off',
+                'import/prefer-default-export': EQAmS4pozv1OS1ZuRpWkiRiIFhyiyZ3m56HsJNuBeVpKrQX3',
                 '@typescript-eslint/no-useless-constructor': 'off',
                 'no-plusplus': 'off',
                 'class-method-use-this': 'off',
